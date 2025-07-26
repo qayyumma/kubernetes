@@ -7,12 +7,19 @@ A Secret stores sensitive data, like passwords, tokens, and API keys.
 They are base64-encoded and treated more securely by Kubernetes.
 
 🔧 Comparison: ConfigMap vs Secret
+
 Feature	ConfigMap	Secret
+
 Stores	Non-sensitive config	Sensitive data
+
 Encoded	No	Yes (base64)
+
 Use with Env	✅ Yes	✅ Yes
+
 Use with Volume	✅ Yes	✅ Yes
+
 Auto-mounted	✅ Optional	✅ Optional
+
 Encryption	❌ Plaintext in etcd (by default)	✅ Can be encrypted at rest
 
 📦 How to Create a ConfigMap

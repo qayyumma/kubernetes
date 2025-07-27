@@ -125,8 +125,11 @@ kubectl apply -f deployment.yaml
 Or edit an existing deployment:
 
 kubectl edit deployment myapp
+
 🔹 Automatically: Using VPA (Vertical Pod Autoscaler)
+
 ✅ VPA YAML Example:
+
 ```
 apiVersion: autoscaling.k8s.io/v1
 kind: VerticalPodAutoscaler
